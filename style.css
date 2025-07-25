@@ -10,7 +10,7 @@ body {
 }
 nav{
     display: flex;
-    background-color: #ffffff;
+    background-color: #090303;
     justify-content: space-between;
     height: 60px;
     width: 100%;
