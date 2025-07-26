@@ -32,3 +32,6 @@ nav ul li a {
     color: #000000;
     font-weight: bold;
 }
+nav ul li a:hover {
+    color: #ffffff;
+}
