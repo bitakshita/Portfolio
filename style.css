@@ -17,6 +17,7 @@ nav{
     align-items: center;
     padding: 0 20px;
     position: fixed;
+    color: #ffffff;
 }
 nav ul {
     justify-content: center;
