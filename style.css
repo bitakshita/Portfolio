@@ -36,3 +36,8 @@ nav ul li a {
 nav ul li a:hover {
     color: #aea652;
 }
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
