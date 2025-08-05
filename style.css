@@ -44,4 +44,8 @@ nav .logo a {
     color: #ffffff;
     text-decoration: none;
 }
+.about {
+    padding: 100px 20px;
+    text-align: center;
+}
 
