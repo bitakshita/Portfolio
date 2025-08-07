@@ -48,11 +48,13 @@ nav .logo a {
     padding: 100px 20px;
     text-align: center;
     color: white;
+    background-color: black
 }
 .about h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
+
 
 
 
