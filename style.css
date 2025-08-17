@@ -55,10 +55,6 @@ nav .logo a {
     margin-bottom: 20px;
 }
 /* About section styles */
-.about p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
 .hero-right{
     display: flex;
     justify-content: right;
