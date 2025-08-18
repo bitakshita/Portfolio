@@ -69,6 +69,13 @@ nav .logo a {
     display: flex;
     border-radius: 100%;
 }
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;}
 
 
 
