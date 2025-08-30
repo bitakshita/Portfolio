@@ -95,6 +95,14 @@ nav .logo a {
     text-align: center;
     }
 
+/* Services section styles */
+.services {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: rgb(16, 16, 16);
+}
+
 
 
 
