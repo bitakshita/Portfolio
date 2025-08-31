@@ -102,6 +102,10 @@ nav .logo a {
     background-color: #f4f4f4;
     color: rgb(16, 16, 16);
 }
+.hero-right h1 {
+    font-size: 36px;   
+    margin-bottom: 20px; 
+    }
 
 
 
