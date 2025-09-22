@@ -5,79 +5,575 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Portfolio</title>
+    <title>Akshita Sharma-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
             <div class="left">
-                <h1>Akshita Sharma</h1>
+                <span class="purple">Akshita</span>'s Portfolio
             </div>
+            <button class="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+
             <div class="right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                <h1>Hi, My name is <span class="purple">Akshita</span></h1>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Mansi-Saini-Resume.pdf" download><button class="btn"><i class="fas fa-file-download"></i>
+                            Download Resume</button></a>
+                    <a href="https://github.com/bitakshita"><button class="btn"><i class="fab fa-github"></i> Visit
+                            Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="assests/profile.jpeg" alt="Developer illustration">
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="experience" class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Images/frontend.png" alt="Frontend Development">
+                    <div class="vertical-title">
+                        Frontend Developer (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed responsive user interfaces using HTML, CSS, and JavaScript. Created engaging web
+                        experiences with modern frameworks and optimized performance.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Images/NodeJs.png" alt="Node.js">
+                    <div class="vertical-title">
+                        NodeJs Developer (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Built scalable server-side applications using Node.js and Express. Implemented RESTful APIs and
+                        integrated with databases for efficient data management.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Images/React.png" alt="React">
+                    <div class="vertical-title">
+                        React Developer (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Created dynamic single-page applications with React. Implemented state management solutions and
+                        optimized component architecture for better performance.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Images/mongo.png" alt="MongoDB">
+                    <div class="vertical-title">
+                        Backend Developer (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Designed and implemented database schemas using MongoDB. Created efficient data models and
+                        integrated with front-end applications through API endpoints.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="servicesSection">
+            <span class="text-gray">What I Offer</span>
+            <h1>My Services</h1>
+
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web applications using modern technologies like React, Node.js, and MongoDB. From
+                        responsive landing pages to complex web platforms.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Responsive Design</span>
+                        <span><i class="fas fa-check"></i> Modern Frameworks</span>
+                        <span><i class="fas fa-check"></i> SEO Optimized</span>
+                        <span><i class="fas fa-check"></i> Fast Loading</span>
+                    </div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Cross-platform mobile applications with React Native. Native performance with code reusability
+                        for both iOS and Android platforms.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Cross-Platform</span>
+                        <span><i class="fas fa-check"></i> Native Performance</span>
+                        <span><i class="fas fa-check"></i> App Store Ready</span>
+                        <span><i class="fas fa-check"></i> Push Notifications</span>
+                    </div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design solutions that create intuitive and engaging digital experiences. From
+                        wireframes to interactive prototypes.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> User Research</span>
+                        <span><i class="fas fa-check"></i> Wireframing</span>
+                        <span><i class="fas fa-check"></i> Prototyping</span>
+                        <span><i class="fas fa-check"></i> Design Systems</span>
+                    </div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Design</h3>
+                    <p>Efficient database architecture and optimization. MongoDB, MySQL, and PostgreSQL database design
+                        with performance optimization.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Schema Design</span>
+                        <span><i class="fas fa-check"></i> Performance Tuning</span>
+                        <span><i class="fas fa-check"></i> Data Migration</span>
+                        <span><i class="fas fa-check"></i> Backup Solutions</span>
+                    </div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>RESTful API development and integration services. Secure, scalable, and well-documented APIs for
+                        seamless data exchange.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> RESTful APIs</span>
+                        <span><i class="fas fa-check"></i> Authentication</span>
+                        <span><i class="fas fa-check"></i> Documentation</span>
+                        <span><i class="fas fa-check"></i> Testing</span>
+                    </div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing website maintenance and support services. Regular updates, security patches, performance
+                        monitoring, and technical support.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Regular Updates</span>
+                        <span><i class="fas fa-check"></i> Security Monitoring</span>
+                        <span><i class="fas fa-check"></i> Performance Optimization</span>
+                        <span><i class="fas fa-check"></i> 24/7 Support</span>
+                    </div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <h2>Need a Custom Solution?</h2>
+                <p>Every project is unique. Let's discuss your specific requirements and create a tailored solution that
+                    fits your needs and budget.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn">Schedule Consultation</a>
+                    <a href="tel:+919799639080" class="btn btn-outline">Call Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- New Projects Section -->
+        <section id="projects" class="projectsSection">
+            <span class="text-gray">My Recent Work</span>
+            <h1>Projects</h1>
+
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Images/e-commerce.jpg" alt="E-commerce project">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack e-commerce website with React frontend and Node.js backend</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="https://github.com/oiiiMansi" class="project-btn"><i class="fab fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Images/weather.png" alt="Weather App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather forecasting app with location-based services</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="https://github.com/oiiiMansi" class="project-btn"><i class="fab fa-github"></i>
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Images/accounting_software.png" alt="Weather App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Accounting Software</h3>
+                        <p>Simplify your finances with smart, reliable, and effortless accounting – all in one place.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="https://github.com/oiiiMansi/AccountingSoftware" class="project-btn"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="aboutSection">
+            <span class="text-gray">Who I Am</span>
+            <h1>About Me</h1>
+
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="Images/bg.png" alt="About Mansi">
+                    <div class="experience-box">
+                        <span class="number">1+</span>
+                        <span class="text">Years of Experience</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h2>Full Stack Dev & Digital Problem Solver</h2>
+                    <p>Hello! I'm Mansi, a passionate full-stack developer based in Jaipur, India. I specialize in
+                        building responsive web applications with modern technologies and creating intuitive user
+                        experiences.</p>
+                    <p>With expertise in both front-end and back-end development, I transform ideas into fully
+                        functional, scalable applications. I enjoy solving complex problems and continuously learning
+                        new technologies to stay at the forefront of web development.</p>
+
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Mansi Saini</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">sainimansi360@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Jaipur, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Availability:</span>
+                            <span class="info-value">Full-time / Freelance</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn">Let's Talk</a>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-container">
+                <div class="skills-header">
+                    <h2>My Skills</h2>
+                    <p>I work with various technologies across the full stack to create comprehensive web solutions.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span>HTML5/CSS3</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>React.js</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Responsive Design</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span>Node.js</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Express.js</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>MongoDB</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>RESTful APIs</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span>Git & GitHub</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>UI/UX Design</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Responsive Design</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 89%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Problem Solving</span>
+                                <div class="skill-progress">
+                                    <div class="skill-bar" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education-container">
+                <div class="education-header">
+                    <h2>Education & Certifications</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Applications</h3>
+                            <p class="timeline-institution">University Maharani College</p>
+                            <p class="timeline-date">2024 - 2026</p>
+                            <p>Studied core computer science subjects including Data Structures, Algorithms, Database
+                                Management, Web Technologies, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contactSection">
+            <span class="text-gray">Get In Touch</span>
+            <h1>Contact Me</h1>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sainimansi360@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Jaipur, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 9799639080</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links contact-social">
+                        <a href="www.linkedin.com/in/oiiimansi"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/oiiiMansi"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mansi's Developer Portfolio</h3>
+                <p>A passionate full-stack developer creating innovative web solutions with modern technologies.</p>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/oiiimansi"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/oiiiMansi"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-second">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-left">
-                <h2>Hello</h2>
-                <p>Myself</p>
-                <span class="name">Akshita Sharma</span>
+
+            <div class="footer-third">
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Mobile App Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Database Design</li>
+                </ul>
             </div>
-            <div class="hero-right">
-                <img src="assests/profile.jpeg" alt="Profile Picture">
-            </div>
-        </section>
-        <section id="About" class="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate web developer with a keen interest in creating dynamic and responsive websites.</p>
-            <li><a href="<i class='bx bxl-github'></i>"></a></li>
-            <li><a href=""></a></li>
+        </div>
 
+        <div class="footer-rights">
+            Copyright &#169; 2025 | <span class="purple">Mansi's Portfolio</span> | All Rights Reserved
+        </div>
+    </footer>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email:
-                <a href="mailto:akshitaumcj@gmail.com">
-                      </p>
-                      
-   <script src="script.js"></script>
-            <p>Feel free to reach out to me for any inquiries or collaborations.</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+    <!-- Scroll To Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-            //updated
-
-          
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Akshita Sharma. All rights reserved.</p>
-    </footer>             
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
-
 
 </html>
