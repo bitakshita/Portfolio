@@ -1,4 +1,5 @@
 alert("Welcome!");
+alert("Enjoy your stay!");
 /**
  * =========================================================================
  * PORTFOLIO WEBSITE INTERACTIVE CONTROLLER
