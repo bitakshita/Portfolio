@@ -205,7 +205,7 @@ nav ul li a:hover {
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-    border: 4px solid rgb(176, 106, 240);
+    border: 4px solid  #3BBA9C;
     filter: drop-shadow(0 0 20px rgba(176, 106, 240, 0.3));
     transition: transform 0.5s ease;
     animation: float 4s ease-in-out infinite;
@@ -226,7 +226,7 @@ nav ul li a:hover {
 }
 
 .purple {
-    color: rgb(176, 106, 240);
+    color:  #3BBA9C;
     text-shadow: 0 0 10px rgba(176, 106, 240, 0.5);
 }
 
@@ -234,7 +234,7 @@ nav ul li a:hover {
 main hr {
     border: 0;
     height: 1px;
-    background: linear-gradient(to right, transparent, rgb(153, 153, 226), transparent);
+    background: linear-gradient(to right, transparent,  #3BBA9C, transparent);
     margin: 60px 5%;
 }
 
