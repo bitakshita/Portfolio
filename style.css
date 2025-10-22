@@ -263,7 +263,7 @@ main hr {
     position: absolute;
     width: 60%;
     height: 3px;
-    background: rgb(176, 106, 240);
+    background: #3BBA9C;
     left: 0;
     bottom: -10px;
 }
@@ -293,10 +293,10 @@ main hr {
     left: 50%;
     width: 16px;
     height: 16px;
-    background-color: rgb(176, 106, 240);
+    background-color: #3BBA9C;
     border-radius: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 10px rgba(176, 106, 240, 0.8);
+    box-shadow: 0 0 10px #3BBA9C;
 }
 
 .image-top {
@@ -311,7 +311,7 @@ main hr {
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgb(176, 106, 240);
+    border: 2px solid #3BBA9C;
 }
 
 .vertical-title {
@@ -366,7 +366,7 @@ main hr {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, rgb(176, 106, 240), rgb(116, 50, 180));
+    background: linear-gradient(90deg, #3BBA9C, #3BBA9C);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -382,7 +382,7 @@ main hr {
 }
 
 .service-card.featured {
-    border-color: rgb(176, 106, 240);
+    border-color: #3BBA9C;
     transform: scale(1.05);
     position: relative;
 }
@@ -394,7 +394,7 @@ main hr {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, rgb(176, 106, 240), rgb(116, 50, 180));
+    background: linear-gradient(45deg, #3BBA9C, #3BBA9C);
     border-radius: 15px;
     z-index: -1;
     animation: glow 2s ease-in-out infinite alternate;
@@ -406,7 +406,7 @@ main hr {
     }
 
     to {
-        box-shadow: 0 0 30px rgba(176, 106, 240, 0.8);
+        box-shadow: 0 0 30px #3BBA9C;
     }
 }
 
@@ -414,7 +414,7 @@ main hr {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: linear-gradient(45deg, rgb(176, 106, 240), rgb(116, 50, 180));
+    background: linear-gradient(45deg, #3BBA9C, #3BBA9C);
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
@@ -452,7 +452,7 @@ main hr {
 
 .service-icon i {
     font-size: 32px;
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
     z-index: 1;
 }
 
@@ -485,7 +485,7 @@ main hr {
 }
 
 .service-features i {
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
     margin-right: 10px;
     font-size: 12px;
 }
@@ -498,7 +498,7 @@ main hr {
 .service-price .price {
     font-size: 1.3rem;
     font-weight: 700;
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
     display: inline-block;
     padding: 10px 20px;
     background: rgba(176, 106, 240, 0.1);
