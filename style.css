@@ -510,7 +510,7 @@ main hr {
     display: block;
     width: 100%;
     padding: 12px 0;
-    background: linear-gradient(135deg, rgb(176, 106, 240), rgb(116, 50, 180));
+    background: linear-gradient(135deg,#3BBA9C,#3BBA9C);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -603,12 +603,12 @@ main hr {
 
 .btn-outline {
     background: transparent !important;
-    border: 2px solid rgb(176, 106, 240) !important;
+    border: 2px solid #3BBA9C !important;
     color: white !important;
 }
 
 .btn-outline::after {
-    background: rgb(176, 106, 240) !important;
+    background: #3BBA9C !important;
 }
 
 .btn-outline:hover {
@@ -731,7 +731,7 @@ main hr {
 
 .project-tags span {
     background-color: rgba(176, 106, 240, 0.2);
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -746,7 +746,7 @@ main hr {
     display: inline-block;
     padding: 8px 15px;
     background-color: transparent;
-    border: 1px solid rgb(176, 106, 240);
+    border: 1px solid #3BBA9C;
     border-radius: 5px;
     color: white;
     font-size: 0.9rem;
