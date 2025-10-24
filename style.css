@@ -791,7 +791,7 @@ main hr {
     max-width: 350px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border: 4px solid rgb(176, 106, 240);
+    border: 4px solid #3BBA9C;
 }
 
 .experience-box {
@@ -802,7 +802,7 @@ main hr {
     padding: 15px 25px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-left: 4px solid rgb(176, 106, 240);
+    border-left: 4px solid #3BBA9C;
     animation: pulse 2s infinite;
 }
 
@@ -824,7 +824,7 @@ main hr {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
 }
 
 .experience-box .text {
@@ -840,7 +840,7 @@ main hr {
 .about-content h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
 }
 
 .about-content p {
@@ -893,7 +893,7 @@ main hr {
     position: absolute;
     width: 60%;
     height: 3px;
-    background: rgb(176, 106, 240);
+    background: #3BBA9C;
     left: 20%;
     bottom: -10px;
 }
@@ -935,7 +935,7 @@ main hr {
 
 .skill-icon i {
     font-size: 24px;
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
 }
 
 .skill-card h3 {
@@ -965,7 +965,7 @@ main hr {
 
 .skill-bar {
     height: 100%;
-    background: linear-gradient(90deg, rgb(176, 106, 240) 0%, rgb(116, 50, 180) 100%);
+    background: linear-gradient(90deg, #3BBA9C 0%, #1f725f 100%);
     border-radius: 4px;
     position: relative;
     animation: skillProgress 1.5s ease-in-out forwards;
@@ -1004,7 +1004,7 @@ main hr {
     position: absolute;
     width: 60%;
     height: 3px;
-    background: rgb(176, 106, 240);
+    background: #3BBA9C;
     left: 20%;
     bottom: -10px;
 }
@@ -1034,13 +1034,13 @@ main hr {
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: rgb(176, 106, 240);
+    background-color: #3BBA9C;
     border-radius: 50%;
     left: 50%;
     top: 15px;
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 10px rgba(176, 106, 240, 0.8);
+    box-shadow: 0 0 10px #3BBA9C;
 }
 
 .timeline-content {
@@ -1089,7 +1089,7 @@ main hr {
 }
 
 .timeline-institution {
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -1173,7 +1173,7 @@ main hr {
 
 .contact-item i {
     font-size: 24px;
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
     margin-right: 20px;
     margin-top: 5px;
 }
@@ -1211,7 +1211,7 @@ main hr {
 }
 
 .social-links a:hover {
-    background-color: rgb(176, 106, 240);
+    background-color: #3BBA9C;
     transform: translateY(-5px);
 }
 
@@ -1239,7 +1239,7 @@ main hr {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: rgb(176, 106, 240);
+    border-color: #3BBA9C;
 }
 
 .form-group input::placeholder,
@@ -1248,7 +1248,7 @@ main hr {
 }
 
 .contact-form .btn {
-    background-color: rgb(176, 106, 240);
+    background-color: #3BBA9C;
     border: none;
     padding: 12px 30px;
     font-weight: 600;
@@ -1258,7 +1258,7 @@ main hr {
 }
 
 .contact-form .btn:hover {
-    background-color: #9949e2;
+    background-color: #3BBA9C;
     transform: translateY(-3px);
 }
 
