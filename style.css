@@ -1310,7 +1310,7 @@ footer {
     position: absolute;
     width: 50%;
     height: 2px;
-    background: rgb(176, 106, 240);
+    background: #3BBA9C;
     left: 0;
     bottom: -8px;
 }
@@ -1327,7 +1327,7 @@ footer {
     position: absolute;
     width: 50%;
     height: 2px;
-    background: rgb(176, 106, 240);
+    background: #3BBA9C;
     left: 0;
     bottom: -8px;
 }
@@ -1352,7 +1352,7 @@ footer ul li a {
 
 footer ul li:hover,
 footer ul li a:hover {
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
 }
 
 .footer .social-links {
@@ -1558,7 +1558,7 @@ section {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: rgb(176, 106, 240);
+    background-color: #3BBA9C;
     color: white;
     width: 50px;
     height: 50px;
@@ -1581,13 +1581,13 @@ section {
 }
 
 .scroll-top:hover {
-    background-color: #9949e2;
+    background-color: #3BBA9C;
     transform: translateY(-5px);
 }
 
 /* Active link indicator */
 nav ul li a.active {
-    color: rgb(176, 106, 240);
+    color: #3BBA9C;
 }
 
 nav ul li a.active::after {
