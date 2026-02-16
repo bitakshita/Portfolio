@@ -1,6 +1,4 @@
-// ================================
 // Navigation Menu Toggle
-// ================================
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -10,7 +8,6 @@ menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
 });
 
-// Close menu when clicking on a nav link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -18,14 +15,11 @@ navLinks.forEach(link => {
     });
 });
 
-// ================================
 // Active Navigation Link on Scroll
-// ================================
 const sections = document.querySelectorAll('section[id]');
 
 function activateNavLink() {
     const scrollY = window.pageYOffset;
-
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 100;
@@ -42,9 +36,7 @@ function activateNavLink() {
 
 window.addEventListener('scroll', activateNavLink);
 
-// ================================
 // Scroll to Top Button
-// ================================
 const scrollToTopBtn = document.querySelector('.scroll-to-top');
 
 window.addEventListener('scroll', () => {
@@ -62,9 +54,7 @@ scrollToTopBtn.addEventListener('click', () => {
     });
 });
 
-// ================================
 // Smooth Scrolling for Anchor Links
-// ================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -80,9 +70,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ================================
 // Intersection Observer for Animations
-// ================================
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -96,21 +84,17 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections and cards
 document.querySelectorAll('section, .experience-card, .project-card, .skill-category, .achievement-card').forEach(el => {
     observer.observe(el);
 });
 
-// ================================
 // Contact Form Handling
-// ================================
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Get form data
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
@@ -118,18 +102,12 @@ if (contactForm) {
             message: document.getElementById('message').value
         };
         
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
         alert('Thank you for your message! I will get back to you soon.');
-        
-        // Reset form
         contactForm.reset();
     });
 }
 
-// ================================
 // Skill Progress Bar Animation
-// ================================
 function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
     
@@ -146,18 +124,14 @@ function animateSkillBars() {
 
 animateSkillBars();
 
-// ================================
 // Dynamic Year in Footer
-// ================================
 const yearElements = document.querySelectorAll('.current-year');
 const currentYear = new Date().getFullYear();
 yearElements.forEach(el => {
     el.textContent = currentYear;
 });
 
-// ================================
 // Parallax Effect for Hero Section
-// ================================
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroSection = document.querySelector('.hero-section');
@@ -171,90 +145,26 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ================================
 // Client Slider Animation Control
-// ================================
 const clientSlider = document.querySelector('.clients-slider');
-if (clientSlider) {
-    // Pause animation on hover for desktop
-    if (window.innerWidth > 768) {
-        clientSlider.addEventListener('mouseenter', () => {
-            clientSlider.style.animationPlayState = 'paused';
-        });
-        
-        clientSlider.addEventListener('mouseleave', () => {
-            clientSlider.style.animationPlayState = 'running';
-        });
-    }
+if (clientSlider && window.innerWidth > 768) {
+    clientSlider.addEventListener('mouseenter', () => {
+        clientSlider.style.animationPlayState = 'paused';
+    });
+    
+    clientSlider.addEventListener('mouseleave', () => {
+        clientSlider.style.animationPlayState = 'running';
+    });
 }
 
-// ================================
-// Typing Effect for Hero Section (Optional)
-// ================================
-const typingElement = document.querySelector('.typing-effect');
-if (typingElement) {
-    const text = typingElement.textContent;
-    typingElement.textContent = '';
-    let i = 0;
-    
-    function typeWriter() {
-        if (i < text.length) {
-            typingElement.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-        }
-    }
-    
-    setTimeout(typeWriter, 1000);
-}
-
-// ================================
 // Add Loading Class to Images
-// ================================
 document.querySelectorAll('img').forEach(img => {
     img.addEventListener('load', function() {
         this.classList.add('loaded');
     });
 });
 
-// ================================
-// Cursor Effect (Optional - for desktop)
-// ================================
-if (window.innerWidth > 768) {
-    const cursor = document.createElement('div');
-    cursor.className = 'custom-cursor';
-    document.body.appendChild(cursor);
-    
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-    
-    // Add hover effect on interactive elements
-    document.querySelectorAll('a, button, .btn').forEach(el => {
-        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-        el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-    });
-}
-
-// ================================
-// Initialize on Page Load
-// ================================
-window.addEventListener('DOMContentLoaded', () => {
-    // Add loaded class to body for CSS animations
-    document.body.classList.add('loaded');
-    
-    // Activate current nav link
-    activateNavLink();
-    
-    // Log welcome message
-    console.log('%c👋 Welcome to my portfolio!', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
-    console.log('%cFeel free to explore and reach out if you\'d like to collaborate!', 'color: #B8C1D9; font-size: 14px;');
-});
-
-// ================================
 // Performance: Debounce Scroll Events
-// ================================
 function debounce(func, wait = 10, immediate = true) {
     let timeout;
     return function() {
@@ -271,62 +181,27 @@ function debounce(func, wait = 10, immediate = true) {
     };
 }
 
-// Apply debounce to scroll-heavy functions
 window.addEventListener('scroll', debounce(() => {
     activateNavLink();
 }));
 
-// ================================
 // Accessibility: Keyboard Navigation
-// ================================
 document.addEventListener('keydown', (e) => {
-    // Close mobile menu on Escape key
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
         menuToggle.classList.remove('active');
     }
 });
 
-// ================================
 // Handle External Links
-// ================================
 document.querySelectorAll('a[target="_blank"]').forEach(link => {
     link.setAttribute('rel', 'noopener noreferrer');
 });
 
-// ================================
-// Project Cards Tilt Effect (Optional)
-// ================================
-if (window.innerWidth > 768) {
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    projectCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const rotateX = (y - centerY) / 10;
-            const rotateY = (centerX - x) / 10;
-            
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-        });
-    });
-}
-
-// ================================
 // Stats Counter Animation
-// ================================
 function animateCounter(element, target, duration = 2000) {
     let current = 0;
-    const increment = target / (duration / 16); // 60 FPS
+    const increment = target / (duration / 16);
     
     const timer = setInterval(() => {
         current += increment;
@@ -354,31 +229,11 @@ document.querySelectorAll('.stat-item').forEach(stat => {
     statsObserver.observe(stat);
 });
 
-// ================================
-// Lazy Loading for Images
-// ================================
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src || img.src;
-                img.classList.add('loaded');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
-
-// ================================
 // Navigation Bar Background on Scroll
-// ================================
 const header = document.querySelector('header');
 let lastScroll = 0;
+
+header.style.transition = 'all 0.3s ease';
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -391,7 +246,6 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = 'none';
     }
     
-    // Hide/show header on scroll
     if (currentScroll > lastScroll && currentScroll > 500) {
         header.style.transform = 'translateY(-100%)';
     } else {
@@ -401,7 +255,11 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// ================================
-// Add Transition to Header
-// ================================
-header.style.transition = 'all 0.3s ease';
+// Initialize on Page Load
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+    activateNavLink();
+    
+    console.log('%c👋 Welcome to my portfolio!', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
+    console.log('%cFeel free to explore and reach out if you\'d like to collaborate!', 'color: #B8C1D9; font-size: 14px;');
+});
